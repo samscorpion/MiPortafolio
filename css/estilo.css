@@ -268,7 +268,7 @@ footer{
     }
     
     .items:hover::before{
-        transform: skewX(30deg);
+        transform: skewX(20deg);
         border-left: 3px solid red;
         border-right: 3px solid red;
         border-radius: 50%;
