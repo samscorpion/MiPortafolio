@@ -200,3 +200,63 @@ footer{
     background-color:red ;
     
 }
+
+@media (min-width:769px) {
+    
+    .contenedor-global{
+        display: grid;
+        grid-template-rows: 100px 1fr 30px;
+    }
+
+    header{
+      display: grid;
+      grid-template-columns: 80px 200px 1fr;
+    }
+
+    header > *{
+        align-items: center;
+       justify-self: center;
+    }
+
+    
+    .sobre-mi .texto h2{
+        font-size: 40px;
+    }
+
+    .sobre-mi .texto p{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .habilidades{
+        width: 100%;
+    }
+    .habilidades h2 ,  .trabajos h2{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    .habilidades .contenido-habilidades{
+        margin-top: 30px;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .trabajo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .trabajo .item{
+        height: fit-content;
+        width: 400px;
+        margin:0;
+    }
+    .trabajo .healtcoin, .trabajo .booxtea{
+        height: 300px;
+        width: 200px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
