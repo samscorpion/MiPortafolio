@@ -134,6 +134,7 @@ main .sobre-mi{
 }
 
 
+
 .trabajos{
     background-color:rgba(245, 245, 245, 0.966) ;
     padding-bottom: 30px;
@@ -182,6 +183,8 @@ main .sobre-mi{
     font-size: 18px;
     padding: 5px 10px;
 }
+
+
 .trabajo .booxtea{
     height: 300px;
     background-image: url("../img/booxtea.png");
@@ -241,6 +244,41 @@ footer{
         width: 100%;
     }
 
+    .contenido-habilidades .items{
+        /* padding: 25px; */
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        line-height: 90px;
+        position: relative;
+
+    }
+    .contenido-habilidades .items::before, .contenido-habilidades .items::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        left: 0;
+        top: 0;
+        transition: 0.4s linear;
+    }
+    .items:hover{
+        transform: scale(1);
+    }
+    
+    .items:hover::before{
+        transform: skewX(30deg);
+        border-left: 3px solid red;
+        border-right: 3px solid red;
+        border-radius: 50%;
+    }
+    .items:hover::after{
+        transform: skewY(-25deg);
+        border-top: 3px solid red;
+        border-bottom: 3px solid red;
+        border-radius: 50%;
+    }
     .trabajo{
         display: flex;
         flex-direction: row;
