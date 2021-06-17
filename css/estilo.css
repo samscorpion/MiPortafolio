@@ -14,7 +14,7 @@
 
 .contenedor-global{
     display: grid;
-    grid-template-rows: 80px 1fr 30px;
+    grid-template-rows:1fr 30px;
     min-width: 320px;
     max-width: 1440px;
     margin: 0 auto;
@@ -22,36 +22,47 @@
 }
 
 header{
-    background-color: #AF0404;
+    /* background-color: #3f3f3f; */
+    width: 100%;
+    padding: 10px 10px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
+}
+header .encabezado{
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
-
 header .logo{
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
    
 }
 header h1{
-    font-size: 40px;
-    color: #ff;
+    font-size:18px;
+    color: #fff;
+    margin-left: 5px;
 }
 
 header nav{
-    width: 50px;
-    height: 50px;
-    margin-left: 30px;
+    width: 40px;
+    height: 40px;
     background-color: rgb(245, 245, 245); 
     border-radius: 5px;
 }
+
+header nav p{
+    display: none;
+}
 main{
-    background-color: #252525;
+   
 }
 main .sobre-mi{
-    height: 90vh;
-    background-color: #414141;
+    min-height: 100vh;
+    background-image: url("../img/fodo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -118,11 +129,18 @@ main .sobre-mi{
 
 .habilidades .contenido-habilidades{
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     margin-bottom: 50px;
 }
-.habilidades .items{
+
+.habilidades .contenido-habilidades .items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.habilidades .skill{
     padding: 5px;
     color:whitesmoke;
 	text-shadow:
@@ -208,17 +226,38 @@ footer{
     
     .contenedor-global{
         display: grid;
-        grid-template-rows: 100px 1fr 30px;
+        grid-template-rows: 1fr 30px;
     }
 
     header{
       display: grid;
-      grid-template-columns: 80px 200px 1fr;
+      grid-template-columns: 200px 1fr;
     }
 
     header > *{
         align-items: center;
        justify-self: center;
+    }
+    header .encabezado .logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    header .encabezado h1{
+        font-size: 40px;
+    }
+   .sobre-mi header nav{
+        background: none;
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header nav p{
+        display: block;
+        font-size: 20px;
     }
 
     
@@ -242,18 +281,32 @@ footer{
         margin-top: 30px;
         font-size: 20px;
         width: 100%;
+        flex-direction:row;
     }
 
-    .contenido-habilidades .items{
+    .habilidades .contenido-habilidades .items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+        padding: 0 10px;
+    }
+
+    .contenido-habilidades .skill{
         /* padding: 25px; */
         width: 100px;
         height: 100px;
         text-align: center;
         line-height: 90px;
         position: relative;
-
+        margin: auto;
     }
-    .contenido-habilidades .items::before, .contenido-habilidades .items::after{
+
+    .bar{
+        margin-top: 5px;
+    }
+    .contenido-habilidades .skill::before, .contenido-habilidades .skill::after{
         content: "";
         position: absolute;
         width: 100%;
@@ -263,17 +316,17 @@ footer{
         top: 0;
         transition: 0.4s linear;
     }
-    .items:hover{
+    .skill:hover{
         transform: scale(1);
     }
     
-    .items:hover::before{
+    .skill:hover::before{
         transform: skewX(20deg);
         border-left: 3px solid #FF0000;
         border-right: 3px solid #FF0000;
         border-radius: 50%;
     }
-    .items:hover::after{
+    .skill:hover::after{
         transform: skewY(-25deg);
         border-top: 3px solid #FF0000;
         border-bottom: 3px solid #FF0000;

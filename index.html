@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Nuevo</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
     <!-- <div id="particles-js"></div> -->
 <main class="contenedor-global">    
-    <header>
-        <img class="logo" src="./img/code2.png" alt="logo">
-        <h1>Portafolio</h1>
-        <nav></nav>
-    </header>
-    <main>
+   
+    <main class="contenido">
         <section class="sobre-mi">
+            <header>
+                <div class="encabezado">
+                <img class="logo" src="./img/code2.png" alt="logo">
+                <h1>SHR</h1>
+                </div>
+                <nav>
+                    <p>Menu</p>
+                </nav>
+            </header>
             <div class="texto">
                 <h2>Samuel Hernandez Ramirez</h2>
                 <p>Desarrollador Web</p>
@@ -31,11 +36,36 @@
         <section class="habilidades">
             <h2>Habilidades</h2>
             <article class="contenido-habilidades">
-                <div class="items">HTML</div>
-                <div class="items">CSS</div>
-                <div class="items">JS</div>
-                <div class="items">PHP</div>
-                <div class="items">MySql</div>
+                <div class="items">
+                    <div class="skill">HTML</div>
+                    <div class="bar">
+                        <progress id="file" max="100" value="70"> 70% </progress>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="skill">CSS</div>
+                    <div class="bar">
+                        <progress id="file" max="100" value="70"> 70% </progress>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="skill">JS</div>
+                    <div class="bar">
+                        <progress id="file" max="100" value="70"> 70% </progress>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="skill">PHP</div>
+                    <div class="bar">
+                        <progress id="file" max="100" value="70"> 70% </progress>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="skill">MySql</div>
+                    <div class="bar">
+                        <progress id="file" max="100" value="70"> 70% </progress>
+                    </div>
+                </div>
             </article>
         </section>
         <section class="trabajos">
@@ -65,8 +95,9 @@
     <footer>
         <p>Hecho por: SamScorpion</p>
     </footer>
+</main>
+
     <script src="./js/particles.min.js"></script>
     <script src="./js/app.js"></script>
-</main>
 </body>
 </html>
