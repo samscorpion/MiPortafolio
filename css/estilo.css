@@ -160,6 +160,7 @@ main .sobre-mi{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    -webkit-background-attachment: fixed;
     padding-bottom: 30px;
    
 }
