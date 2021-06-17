@@ -155,13 +155,13 @@ main .sobre-mi{
 
 
 .trabajos{
-    background-image: url("../img/fondocodi.jpg");
+    background-image: url("../img/fondotrabajos.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding-bottom: 30px;
-    opacity: 0.9;
+   
 }
 .trabajos h2{
     padding: 15px 5px;
