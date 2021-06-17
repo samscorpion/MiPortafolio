@@ -63,6 +63,7 @@ main .sobre-mi{
     background-image: url("../img/fodo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -154,8 +155,13 @@ main .sobre-mi{
 
 
 .trabajos{
-    background-color:#414141;
+    background-image: url("../img/fondocodi.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding-bottom: 30px;
+    opacity: 0.9;
 }
 .trabajos h2{
     padding: 15px 5px;
@@ -185,9 +191,9 @@ main .sobre-mi{
 }
 
 .trabajo .item{
-    background-color: #414141;
+    background-color: #41414185;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px 1px #fff;
+    box-shadow: 0px 2px 5px 2px rgb(255, 255, 255);
 }
 .trabajo .item h3{
     padding: 5px 0px;
@@ -218,8 +224,8 @@ main .sobre-mi{
     height: 300px;
 }
 footer{
-    background-color: #AF0404 ;
-    
+    background-color: #010609;
+    border-top: 2px solid #fff;
 }
 
 @media (min-width:769px) {
