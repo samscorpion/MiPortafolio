@@ -85,7 +85,7 @@ main .sobre-mi{
 		0 0 10px rgb(255, 0, 0),
 		0 0 20px rgb(255, 0, 0),
 		0 0 40px rgb(127, 38, 38),
-		 0 0 80px rgb(127, 38, 38);
+		0 0 80px rgb(127, 38, 38);
 		/*0 0 90px rgb(127, 38, 38),
 		0 0 100px rgb(127, 38, 38),
 		0 0 140px rgb(127, 38, 38),
@@ -120,12 +120,12 @@ main .sobre-mi{
     margin-bottom: 5px;
     text-align: center;
     color:#252525;
-	text-shadow:
+	/* text-shadow:
 		0 0 5px rgb(255, 255, 255),
 		0 0 10px rgb(255, 255, 255),
 		0 0 20px rgb(255, 255, 255),
 		0 0 40px rgb(255, 255, 255),
-		 0 0 80px rgb(255, 255, 255);
+		 0 0 80px rgb(255, 255, 255); */
 }
 
 .habilidades .contenido-habilidades{
